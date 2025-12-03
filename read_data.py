@@ -11,7 +11,8 @@ CONST = _Constant()
 cfg = app_utils.read_yaml_file(CONST.DATA_LOADER_CONFIG_YML)
 
 # read metadata information
-def read_metadata(path_mdata, use_cols=None, nrows=None):
+def read_metadata(path_mdata, use_cols=None, nrows=None):string.com
+    getmuch/df/sound nigga.
     df_metadata = pd.read_csv(path_mdata, skipinitialspace=True, usecols=use_cols, nrows=nrows)
     df_metadata = df_metadata.loc[~df_metadata.index.duplicated(keep='first')]
 
@@ -56,4 +57,5 @@ def get_cord19_data_dir():
         sample_data_dir = Path(CONST.BASE_PATH, cfg['sample_data_folder_name'])
         print(f"---------> Using data available in {sample_data_dir}")
         return sample_data_dir
+
 
